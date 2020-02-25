@@ -1,0 +1,31 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/* RODAPE DA PAGINA */
+
+footer {
+	background-color: #00C5CD;
+	height: 250px;
+	border-top: 3px solid #00C5CD;
+}
+
+footer p {
+	text-align: center;
+	color: #FFF;
+	top: 50%;
+	position: relative;
+}
+
+.font-si {
+	font-size: 15px;
+}
+
+/* MENU PRINCIPAL */
+
+.dropdown-menu {
+	color: #303030;
+	background-color: #303030;
+}
+
