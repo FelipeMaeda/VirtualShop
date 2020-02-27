@@ -7,4 +7,10 @@ def helloWorld(request):
 def home(request):
     return render(request, 'website/index.html')
 
+def carrinho(request):
+    return render(request, 'website/cart.html')
+
+def login(request):
+    return render(request, 'website/login.html')
+
 # Create your views here.
