@@ -22,6 +22,51 @@ footer p {
 	font-size: 15px;
 }
 
+/* HEADER MENU */
+
+#header-menu {
+	margin-left: 4%;
+	width:. 100%;
+	height: 120px;
+	position: relative;
+}
+
+#img-logo {
+	position: relative;
+	float: left;
+	width: 120px;
+	height: 120px;
+}
+
+#img-logo img {
+	margin-left: 20px;
+}
+
+#form-head {
+	position: relative;
+	float: left;
+	margin-left: 7%;
+	margin-top: 35px;
+}
+
+#form-head input[type=text]:focus{
+	width: 600px;
+}
+
+#form-pos {
+	width: 400px;
+	-webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+	height: 50px;
+}
+
+#but-pos {
+	position: relative;
+	float: left;	
+	height: 50px;
+	margin-left: 10px;
+}
+
 /* MENU PRINCIPAL */
 
 .dropdown-menu {
