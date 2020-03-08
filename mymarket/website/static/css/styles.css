@@ -25,8 +25,8 @@ footer p {
 /* HEADER MENU */
 
 #header-menu {
+	margin-right: 0;
 	margin-left: 4%;
-	width:. 100%;
 	height: 120px;
 	position: relative;
 }
@@ -43,6 +43,8 @@ footer p {
 }
 
 #form-head {
+	width: 60%;
+	min-width: 300px;
 	position: relative;
 	float: left;
 	margin-left: 7%;
@@ -50,11 +52,11 @@ footer p {
 }
 
 #form-head input[type=text]:focus{
-	width: 550px;
+	width: 70%;
 }
 
 #form-pos {
-	width: 40%;
+	width: 50%;
 	-webkit-transition: width 0.4s ease-in-out;
         transition: width 0.4s ease-in-out;
 	height: 50px;
@@ -67,12 +69,12 @@ footer p {
 	margin-left: 0px;
 }
 
-#form-login-cart {
+#form-login-cart {	
 	position: relative;
 	float: right;
 	margin-left: 40px;
 	width: 250px;
-	height: 50px;
+	height: 120px;
 }
 
 /* MENU PRINCIPAL */
