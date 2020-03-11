@@ -1,3 +1,5 @@
+{% load static %}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -52,7 +54,7 @@ footer p {
 }
 
 #form-head input[type=text]:focus{
-	width: 70%;
+	width: 80%;
 }
 
 #form-pos {
@@ -69,13 +71,22 @@ footer p {
 	margin-left: 0px;
 }
 
-#form-login-cart {	
+#form-login-cart {
+	max-height: 20%;
+	font-family: Avantgarde;
 	position: relative;
 	float: right;
-	margin-left: 40px;
-	width: 250px;
-	height: 120px;
+	margin-top: 42px;
+	margin-right: 60px;
+	max-height: 70px;
+	width: auto;
+	font-size: 19px;
+	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
+
+ #ic-margin {
+	margin-left: 15px;
+ }
 
 /* MENU PRINCIPAL */
 
