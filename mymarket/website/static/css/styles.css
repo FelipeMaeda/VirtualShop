@@ -76,6 +76,16 @@ footer p {
 	width: 250px;
 	height: 120px;
 }
+#div-content {
+	min-width: auto;}
+
+#login-content {
+	min-width: 150px;
+}
+
+#cart-content {
+	min-width: 150px;
+}
 
 /* MENU PRINCIPAL */
 
