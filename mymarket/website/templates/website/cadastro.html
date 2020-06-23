@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Cadastrar MyMarket{% endblock %}
+
+{% block content %}
+
+
+	<div class="container-fluid" id="cont_cadastro">
+	<div class="container" id="login-back">
+	{% csrf_token %}
+	<form method="POST">
+	       	<p>
+        	    	<div id="dp">
+				<legend id="legend-produto"><h1>Cadastro</h1></legend>
+				<div id="form_left1">
+				<div id="form_left">
+               			<legend>Dados Pessoais</legend>
+				<br>
+				<label for="id">Nome Completo:</label><br>
+				{{ form.nome}}<br> <!-- <input id="ajust" type="text" id="nome" name="nome" maxlength="40" required=""><br>-->
+				<label for="cpf">CPF:</label><br>
+				{{ form.cpf }}<!-- <input id="ajust" type="text" class="form-control cpf-mask form-control" placeholder="000.000.000-00" maxlength="14" autocomplete="off"> -->	
+				<label for="data">Dada de Nascimento:</label><br>
+				{{ form.data_nasc }}<!-- <input id="ajust" type="text" class="form-control" placeholder="dd/mm/aaaa" data-mask="00/00/0000" maxlength="10" autocomplete="off"> -->
+				<label for="telef">Telefone:</label><br>
+				{{ tel.numero }} <!-- <input id="ajust" type="text" class="form-control cel-sp-mask" placeholder="(00) 00000-0000">-->
+				<label for="telef">Telefone(2):</label><br>
+				{{ tel.numero2 }}<!-- <input id="ajust" type="text" class="form-control cel-sp-mask" placeholder="(00) 00000-0000"> -->
+				<br>
+				</div>
+				<div id="form-left2">
+				<label for="telef">Sexo:</label><br>
+				{{ form.sexo }}<!-- <input id="Sexo" name="Sexo" type="radio" value="M">
+				<span class="sex">Masculino</span>
+				<input id="Sexo" name="Sexo" type="radio" value="F">
+				<span class="sex">Feminino</span>
+				-->
+				</div>
+				</div>
+				<div id="form_right">
+                		<legend>Endereço</legend>
+				<br>
+				<label for="cep">CEP:</label>
+				{{ end.cep }}<!-- <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">--> <br>
+                		<label for="end">Rua:</label>
+				{{ end.logradouro }}<!--  <input type="text" id="end" name="end"> --> <br>
+                <td>
+                    <label for="num">N°:</label>
+                    </td>
+                    <td align="left">
+			{{ end.numero }}<!-- <input type="text" name="num" size="2">-->
+                    </td><br>
+                <label for="bar">Bairro:</label><br>
+		{{ bai.nome_bairro }} <!-- <input type="text" id="bar" name="bar"> --> <br>
+                <td>
+                    <label for="estado">Estado:</label><br>
+                   </td>
+                   <td align="left">
+                    <!--<select name="estado">
+                    <option value="sl">selecione</option>
+                    <option value="al">Alagoas</option>
+                    <option value="am">Amazonas</option>
+                    <option value="ap">Amapá</option>
+                    <option value="ba">Bahia</option>
+                    <option value="ce">Ceará</option>
+                    <option value="df">Distrito Federal</option>
+                    <option value="es">Espírito Santo</option>
+                    <option value="go">Goiás</option>
+                    <option value="ma">Maranhão</option>
+                    <option value="mt">Mato Grosso</option>
+                    <option value="ms">Mato Grosso do Sul</option>
+                    <option value="mg">Minas Gerais</option>
+                    <option value="pa">Pará</option>
+                    <option value="pb">Paraíba</option>
+                    <option value="pr">Paraná</option>
+                    <option value="pe">Pernambuco</option>
+                    <option value="pi">Piauí</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="rn">Rio Grande do Norte</option>
+                    <option value="ro">Rondônia</option>
+                    <option value="rs">Rio Grande do Sul</option>
+                    <option value="rr">Roraima</option>
+                    <option value="sc">Santa Catarina</option>
+                    <option value="se">Sergipe</option>
+                    <option value="sp">São Paulo</option>
+                    <option value="to">Tocantins</option>
+		    </select>-->
+		    {{ est.sigla }}
+                   </td>
+		   <br><br>
+		<legend>Dados de Login</legend>
+		<label for="email">Email:</label><br>
+		{{ form.email }}
+		<!-- <input type="email" id="email" name="email"> --> <br>
+		<label for="pass">Senha:</label> <br>
+    		{{ form.senha }}
+		<!-- <input type="password" id="pass" name="pass">--> <br>
+    		<br>
+		<input id="button-cadastro" type="submit" class="btn btn-sucess" value="Finalizar Cadastro">
+		</div>
+		</div>
+            </p>
+
+        </form>
+
+	</div>
+
+</div>
+
+
+<div class="offset-1 col-10 list-div">
+	<h1>Cadastrar Novo Usuário</h1>
+	<form method="POST">
+		{% csrf_token  %}
+		{{ end.complemento }}	
+		<input type="submit" class="btn btn-sucess" value="Continuar">
+	</form>
+	
+
+</div>
+
+
+{% endblock %}
+
+
+
+
+
+

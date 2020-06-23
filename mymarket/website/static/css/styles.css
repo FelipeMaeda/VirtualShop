@@ -1,6 +1,102 @@
+{% load static %}
+
 * {
 	padding: 0;
 	margin: 0;
+}
+
+/* TELA CADASTRO */
+
+#button-cadastro-produto {
+	float: left;
+        margin-right: 10px;
+        margin-left: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: .8em 0;
+        min-width: 340px;
+	background-color: #007bffb3;
+	color: #fff;
+}
+
+#legend-produto {
+	text-align: center;
+}
+
+#button-cadastro {
+	color: #fff;
+	float: right;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	padding: .8em 0;
+	min-width: 340px;
+	background-color: #007bffb3;
+}
+
+#cont_cadastro {
+	width: 100%;
+	height: 850px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 50px;	
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color: #fff;	
+}
+
+/* TELA DE CADASTRO */
+
+#dp-login {
+	border: 10px solid #fff;
+        z-index: 2;
+        height: 400px;
+        margin-bottom: 20px;
+        font-family: 'PlutoBold', Arial, sans-serif;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);	
+}
+
+#dp-le {
+	margin-left: 10px;	
+	height: 100%;
+	border-right: 1px solid #b7cedf;
+	float: left;
+	width: 46%;
+}
+
+#dp-ri {
+	margin-right: 10px;
+        height: 100%;
+        float: right;
+        width: 46%;
+
+}
+
+#dp-ri h2 {
+	margin-top: 30px;
+}
+
+#dp-ri button {
+	margin-top: 77px;
+}
+
+#dp-login h2 {
+	text-align: center;
+}
+
+#dp-login label {
+	margin-bottom: 13px;
+	text-align: center;
+}
+
+#dp-login input {
+	margin-bottom: 13px;
+	width: 90%;
+}
+
+#dp-login button {
+	float: left;
+	margin-left: 15%;
 }
 
 /* RODAPE DA PAGINA */
@@ -25,11 +121,37 @@ footer p {
 /* HEADER MENU */
 
 #header-menu {
-	margin-right: 0;
-	margin-left: 4%;
+	margin-top: 20px;
+	min-width: 1250px;
+	margin-right: auto;
+	margin-left: auto;
 	height: 120px;
 	position: relative;
 }
+
+#nav-bar {
+	border-radius: 4px;
+	z-index: 2;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+}
+
+#navbarSupportedContent{
+	font-size: 23px;
+}
+
+#navbarSupportedContent ul{
+	width: 100%;
+}
+
+#cont_page {
+	padding: 0 0 0 0;
+}
+
+#navbarSupportedContent li{
+        margin-left: 20px;
+	float: left;
+}
+
 
 #img-logo {
 	position: relative;
@@ -38,24 +160,50 @@ footer p {
 	height: 120px;
 }
 
+#cad-left {
+	height: 100%;
+	text-align: left;
+   	width: 100%;
+	min-width: 630px;
+	box-shadow: 0 0 0.2 black;
+}
+
 #img-logo img {
 	margin-left: 20px;
 }
 
 #form-head {
-	width: 60%;
-	min-width: 300px;
+	min-width: 600px;
 	position: relative;
 	float: left;
-	margin-left: 7%;
-	margin-top: 35px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-left: 50px;
 }
 
-#form-head input[type=text]:focus{
-	width: 70%;
+#form-head input{
+	width: 90%;
+}
+
+#contato {
+	color: #004186;
+	width: 100%;
+	height: 30px;
+	margin-top: 5px;
+}
+
+#contato a {
+	font-size: 15px;
+	margin-left: 0;
+	text-decoration: none;
+}
+
+#contato table{
+	width: 80%;
 }
 
 #form-pos {
+	background-color: #49dde43d;
 	width: 50%;
 	-webkit-transition: width 0.4s ease-in-out;
         transition: width 0.4s ease-in-out;
@@ -69,15 +217,34 @@ footer p {
 	margin-left: 0px;
 }
 
-#form-login-cart {	
+#form-login-cart {
+	max-height: 20%;
+	font-family: Avantgarde;
 	position: relative;
 	float: right;
-	margin-left: 40px;
-	width: 250px;
-	height: 120px;
+	margin-top: 42px;
+	margin-right: 60px;
+	max-height: 70px;
+	width: auto;
+	font-size: 19px;
+	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
+
+
+
 #div-content {
 	min-width: auto;}
+
+#pad-extra {
+	color: #007bff;
+	padding: 0;
+	float: right;
+	position: relative;
+}
+
+#pad-extra a {
+	text-decoration: none;
+}
 
 #login-content {
 	min-width: 150px;
@@ -87,10 +254,101 @@ footer p {
 	min-width: 150px;
 }
 
+ #ic-margin {
+	margin-left: 15px;
+ }
+
 /* MENU PRINCIPAL */
 
 .dropdown-menu {
 	color: #303030;
 	background-color: #303030;
+}
+
+
+
+/* PAGINA DE LOGIN */
+
+#login-back {
+	height: 700px;
+	padding-top: 20px;
+	width: 800px;
+	background-color: #fff;
+}
+
+#dp {
+	border: 10px solid #fff;
+	z-index: 2;
+	height: 800px;
+	margin-bottom: 20px;
+	font-family: 'PlutoBold', Arial, sans-serif;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+}
+
+#form-font {
+	font-size: 19px;
+}
+
+#dp input {
+	margin-bottom: 10px;
+}
+
+#ajust {
+	width: 100%;
+}
+
+#end {
+	font-family: "Arial", cursive, sans-serif;
+}
+
+#email {
+	font-family: "Arial", cursive, sans-serif;
+}
+
+#form_center{
+	margin-top: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+	width: 90%;
+        float: left;
+}
+
+#form_left {
+	margin-left: 0;
+	width: 300px;
+	float: left;
+	font-size: 19px;
+}
+
+#form_left1 {
+        margin-top: 20px;
+        margin-left: 5%;
+        width: 300px;
+        float: left;
+        font-size: 19px;
+}
+
+#form_left1 input {
+}
+
+#form_left input {
+	width: 100%;
+	height: calc(1.5em + .75rem + 2px);
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#form_right {
+	font-size: 19px;
+	margin-top: 20px;
+	width: 350px;
+	float: right;
 }
 

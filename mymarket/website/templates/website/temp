@@ -1,0 +1,9 @@
+    path('categoria/alimentos', views.cat_alimentos),
+    path('categoria/bebidas', views.cat_bebidas),
+    path('categoria/hortifruti', views.cat_hortifruti),
+    path('categoria/utilitarios', views.cat_utilitarios),
+    path('categoria/limpeza', views.cat_limpeza),
+    path('categoria/higiene', views.cat_higiene),
+    path('categoria/pet', views.cat_pet),
+    path('categoria/todos', views.cat_todos),
+

@@ -1,15 +1,32 @@
 {% extends 'base.html' %}
+{% load static %}
 
-{% block title %}Login MyMarket{% endblock %}
+{% block title %} MyMarket {% endblock %}
 
 {% block content %}
 
-<h1> Teste </h1>
+	<div class="container" id="cont_login">
+	<form>
+	       	<p id="text-login">
+        	    	<div id="dp-login">
+				<div id="dp-le">
+					<h2><strong>Login</strong></h2>
+					<label for="email">Email:</label><br>
+    					<input type="email" id="email" name="email"><br>
+   					<label for="pass">Senha:</label><br>
+    					<input type="password" id="pass" name="pass"><br>
+    					<br>
+					<button id="button-cadastro" type="button">ENTRAR</button>
+				</div>
+				<div id="dp-ri">
+					<h2><strong>Ainda não possui conta?</strong>
+						<br>Cadastra-se agora mesmo e receba as melhores ofertas!</h2>
+					<a href="/cadastrar/usuario"><button id="button-cadastro" type="button">CADASTRAR-SE</button></a>
+				</div>
+			</div>
+		</p>
+	</form>
+	</div>
 
 {% endblock %}
-
-
-
-
-
 

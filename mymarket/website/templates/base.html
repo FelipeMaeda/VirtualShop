@@ -1,5 +1,6 @@
 {% load static %}
 
+
 <!DOCTYPE html>
 <html lang="pt-be">
 	<head>
@@ -9,73 +10,137 @@
 		<title>{% block title %}{% endblock %}</title>
 		<link rel="stylesheet" href="{% static 'css/styles.css' %}">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	</head>
 	
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+
 <body>
 	<!-- -----------------------------HEADER MENU ---------------------------- -->
-	<div class="row form-group" id="header-menu">
+	<div class="container" id="header-menu">
 		<div id="img-logo">
+			<a href="/">
 			<img src="{% static "images/logo.png" %}" class="img-fluid" alt="MyMarket">
+			</a>
 		</div>
 		<div class="form-inline" id="form-head">
+			<div id="contato" class="container">
+				<table border=0>
+				<tr>
+					<td><a href="/contato">Contato</a></td>
+					<td><a href="/parceiros">Parceiros</a></td>
+					<td><a href="/assinante">Assinante</a></td>
+					<td><a href="/localidades_atendidas">Localidades atendidas</a></td>	
+				</tr>
+				</table>
+			</div>
 			<input class="form-control" id="form-pos" type="text" placeholder="Produtos, alimentos, etc...">
 			<button class="btn btn-secondary" id="but-pos"  type="submit"><i class="fas fa-search"></i></button>
         	</div>
-		<div class="" id="cart-content">
-			<a href="#"><i class="fas fa-shopping-cart">Carrinho</i></a>
-		</div>
-		<div class="" id="login-content">
-			<a href="#"><i class="fas fa-sign-in-alt"></i>Entrar<br>Cadastrar</a>
+		<div class="row" id="pad-extra">
+			<div class="row justify-content-around" id="form-login-cart">
+				<a href="/usuario/login"><i class="fas fa-user" id="ic-margin"></i>Entrar</a><a href="/cadastrar/usuario">/Cadastrar</a>
+			</div>
+			<div class="row justify-content-around" id="form-login-cart">
+				<a href="/carrinho"><i class="fas fa-shopping-cart"></i>Carrinho</a>
+			</div>
 		</div>
 	</div>
 
 	<!-- -----------------------MENU PRINCIPAL---------------------------------- -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  		<a class="navbar-brand" href="#">MyMarket</a>
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    			<span class="navbar-toggler-icon"></span>
-  		</button>
+	<nav id="nav-bar" class="navbar navbar-expand-lg navbar-dark bg-primary">
+  		
 
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<div class="container" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
       					<li class="nav-item active">
-        					<a class="nav-link active" href="#">Inicio<span class="sr-only">(current)</span></a>
+        					<a class="nav-link active" href="/">Inicio<span class="sr-only">(current)</span></a>
       					</li>
+					<li class="nav-item dropdown active">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categorias
+                                                </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="/categoria/alimentos">Alimentos</a>
+                                                <a class="dropdown-item" href="/categoria/bebidas">Bebidas</a>
+                                                <a class="dropdown-item" href="/categoria/hortifruti">Hortifrúti</a>
+                                                <a class="dropdown-item" href="/categoria/utilitarios">Utilitários</a>
+                                                <a class="dropdown-item" href="/categoria/limpeza">Limpeza</a>
+                                                <a class="dropdown-item" href="/categoria/higiene">Higiene</a>
+                                                <a class="dropdown-item" href="/categoria/petshop">Pet</a>
+                                                <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="/categoria/todos">Todas as categorias</a>
+                                                </div>
+                                        </li>
       					<li class="nav-item active">
-        					<a class="nav-link active" href="#">Produtos</a>
+        					<a class="nav-link active" href="/produtos/todos">Todos os produtos</a>
       					</li>
 					<li class="nav-item active">
-                                                <a class="nav-link active" href="#">Entrar<span class="sr-only">(current)</span></a>
+                                                <a class="nav-link active" href="/fornecedores">Fornecedores<span class="sr-only">(current)</span></a>
                                         </li>
-                                        <li class="nav-item active">
-                                                <a class="nav-link active" href="#">Cadastrar</a>
-                                        </li>
-					<li class="nav-item dropdown active">
-        					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Categorias
-        					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          					<a class="dropdown-item" href="#">Alimentos</a>
-						<a class="dropdown-item" href="#">Bebidas</a>
-          					<a class="dropdown-item" href="#">Hortifrúti</a>
-                                                <a class="dropdown-item" href="#">Utilitários</a>
-						<a class="dropdown-item" href="#">Limpeza</a>
-                                                <a class="dropdown-item" href="#">Higiene</a>
-						<a class="dropdown-item" href="#">Pet</a>
-						<div class="dropdown-divider"></div>
-          						<a class="dropdown-item" href="#">Todas as categorias</a>
-        					</div>
-      					</li>
-    				</ul>
+                                   	</ul>
 		</div>
 	</nav>
-	<div class="container-fluid">
+	<div id="cont_page" class="container-fluid">
 
 	{% block content %}{% endblock %}
 
 	</div>
 
+	<!-- -------------------------SLIDE SHOW-----------------------------
+
+	<div class="w3-content w3-display-container" style="max-width:100%">
+  		<img class="mySlides" src="{% static "images/slide_1.png" %}" style="width:100%">
+  		<img class="mySlides" src="{% static "images/slide_2.png" %}" style="width:100%">
+  		<img class="mySlides" src="{% static "images/slide_3png" %}" style="width:100%">
+  	<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    	<div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    		<div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    			<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    			<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    			<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  		</div>
+	</div>
+
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+	function plusDivs(n) {
+  		showDivs(slideIndex += n);
+	}
+
+	function currentDiv(n) {
+  		showDivs(slideIndex = n);
+	}
+
+	function showDivs(n) {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+  		var dots = document.getElementsByClassName("demo");
+  		if (n > x.length) {slideIndex = 1}
+  		if (n < 1) {slideIndex = x.length}
+  		for (i = 0; i < x.length; i++) {
+    		x[i].style.display = "none";  
+  		}
+  	
+		for (i = 0; i < dots.length; i++) {
+    			dots[i].className = dots[i].className.replace(" w3-white", "");
+  		}
+  		x[slideIndex-1].style.display = "block";  
+  		dots[slideIndex-1].className += " w3-white";
+	}
+</script>	
+	
+
+-->
+
 	<!-- -------------------------RODAPE DA PAGINA----------------------------- -->
+
 	<footer><p>MyMarket <br><span class="font-si">Copyright Reserved 2020 @ MyMarket.com.br</span></p></footer>
 	
 	<!-- ------------------------JAVA SCRIPT BOOTSTRAP------------------------- -->

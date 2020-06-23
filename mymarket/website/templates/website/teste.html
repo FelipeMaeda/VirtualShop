@@ -1,0 +1,98 @@
+<html>
+<meta charset="utc8"/>
+
+<body>
+
+<h1>Cadastro</h1>
+<form>
+
+<fieldset>
+
+    <legend>Dados Pessoais</legend>
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome"><br><br>
+    <label for="sobren">Sobrenome:</label><br>
+    <input type="text" id="sobren" name="sobren"><br><br>
+    <label for="cpf">CPF:</label><br>
+    <input type="text" class="form-control cpf-mask" placeholder="000.000.000-00"><br><br>
+    <label for="data">Dada de Nascimento:</label><br>
+    <input type="text" class="form-control" placeholder="dd/mm/aaaa" data-mask="00/00/0000" maxlength="10" autocomplete="off"><br><br>
+    <label for="telef">Contato:</label><br>
+    <input type="text" class="form-control cel-sp-mask" placeholder="(00) 00000-0000"><br><br>
+
+    
+</fieldset>
+
+<fieldset>
+
+    <legend>Endereço</legend>
+    <label for="cep">CEP:</label><br>
+    <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3"><br><br>
+    <label for="end">Rua:</label><br>
+    <input type="text" id="end" name="end">
+    <td>
+        <label for="num">Num:</label>
+        </td>
+        <td align="left">
+            <input type="text" name="num" size="2">
+        </td><br><br>
+    <label for="bar">Bairro:</label><br>
+    <input type="text" id="bar" name="bar"><br><br>
+    <td>
+        <label for="estado">Estado:</label><br>
+       </td>
+       <td align="left">
+        <select name="estado"> 
+        <option value="sl">selecione</option> 
+        <option value="al">Alagoas</option> 
+        <option value="am">Amazonas</option> 
+        <option value="ap">Amapá</option> 
+        <option value="ba">Bahia</option> 
+        <option value="ce">Ceará</option> 
+        <option value="df">Distrito Federal</option> 
+        <option value="es">Espírito Santo</option> 
+        <option value="go">Goiás</option> 
+        <option value="ma">Maranhão</option> 
+        <option value="mt">Mato Grosso</option> 
+        <option value="ms">Mato Grosso do Sul</option> 
+        <option value="mg">Minas Gerais</option> 
+        <option value="pa">Pará</option> 
+        <option value="pb">Paraíba</option> 
+        <option value="pr">Paraná</option> 
+        <option value="pe">Pernambuco</option> 
+        <option value="pi">Piauí</option> 
+        <option value="rj">Rio de Janeiro</option> 
+        <option value="rn">Rio Grande do Norte</option> 
+        <option value="ro">Rondônia</option> 
+        <option value="rs">Rio Grande do Sul</option> 
+        <option value="rr">Roraima</option> 
+        <option value="sc">Santa Catarina</option> 
+        <option value="se">Sergipe</option> 
+        <option value="sp">São Paulo</option> 
+        <option value="to">Tocantins</option> 
+       </select>
+       </td>
+
+</fieldset>
+
+<fieldset>
+
+    <legend>Dados de Login</legend>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="pass">Senha:</label><br>
+    <input type="password" id="pass" name="pass"><br><br>
+    <label for="conf">Confirmar Senha:</label><br>
+    <input type="password" id="conf" name="conf"><br><br>
+
+
+</fieldset>
+
+</form>
+
+
+</body>
+
+
+</html>

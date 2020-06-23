@@ -25,7 +25,7 @@ SECRET_KEY = '!_3t+n$di2*$cs1+c34svcbk080pjv)2qzdf^7by+-j8b57w0t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['25.83.147.185', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['192.168.15.19', '192.168.15.15','192.168.15.18', '192.168.15.20','25.106.186.47', '25.83.147.185', '192.168.15.26', 'localhost', '127.0.0.1', '192.168.15.*']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'website',
+    'financeiro',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'mymarket.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,3 +120,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Images uploaded from users.
+
+MEDIA_URL = '/home/felipe/dev/VirtualShop/mymarket/website/static/images/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, '/home/felipe/dev/VirtualShop/mymarket/website/static/images')
+
+LOGIN_REDIRECT_URL = '/'
+
+LOGOUT_REDIRECT_URL = '/'

@@ -20,5 +20,28 @@ from . import views
 urlpatterns = [
     path('', views.home),
     path('carrinho/', views.carrinho),
-    path('login/', views.login),
+    path('cadastrar/produto', views.cadastrar_produto),
+    path('cadastrar/usuario', views.cadastrar_usuario),
+    path('contato/', views.contato),
+    path('parceiros/', views.parceiros),
+    path('assinante/', views.assinante),
+    path('localidades_atendidas/', views.localidades_atendidas),
+    path('usuario/login', views.login),
+    path('categoria/alimentos', views.cat_alimentos),
+    path('categoria/bebidas', views.cat_bebidas),
+    path('categoria/hortifruti', views.cat_hortifruti),
+    path('categoria/utilitarios', views.cat_utilitarios),
+    path('categoria/limpeza', views.cat_limpeza),
+    path('categoria/higiene', views.cat_higiene),
+    path('categoria/petshop', views.cat_pet),
+    path('categoria/todos', views.cat_todos),
+    path('produtos/todos', views.produtos_todos),
+    path('fornecedores/', views.fornecedores),
+    path('produto/<int:id>/', views.produtoView),
 ]
+
+
+
+
+
+''' path('usuario/<str:name>', views.usuario, name='yourname'),'''

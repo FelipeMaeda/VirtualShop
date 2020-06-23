@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} MyMarket {% endblock %}
+
+{% block content %}
+	
+	<ul id="lista-produtos">
+	{% for produto in produtos %}
+		<li class="task-iten">
+			<img src="{% static 'images/'%}{{produto.imagem}}" alt="{{produto.nome}}">
+			<span><a href="/produtos/{{produto.id}}">{{produto.nome}}</a></span>
+			</img>
+		</li>
+	{% endfor %}
+	</ul>
+
+{% endblock %}
+
