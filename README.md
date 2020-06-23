@@ -2,7 +2,7 @@
 
 The MyMarket virtual store is a project created by a group of students from the FAM University Center. The project consists of developing an autonomous system that is easy to maintain, where users can make their purchases online.
 
-<img src="Prototipo1.png">
+<img src="Protótipo1.png">
 
 <h3><strong>Prerequisites</strong></h3>
 To run the program, it will be necessary to use Python 3.
