@@ -11,9 +11,9 @@ To run the program, it will be necessary to use Python 3.
 
 Open new window in your terminal, and follow instructions below:
 ```
-git clone https://github.com/FelipeMaeda/VirtualShop.git<br>
-cd VirtualShop/mymarket<br>
-pip3 install -r requirements.txt<br>
+git clone https://github.com/FelipeMaeda/VirtualShop.git
+cd VirtualShop/mymarket
+pip3 install -r requirements.txt
 python manage.py makemigrations financeiro
 pytho manage.py migrate
 pytho manage.py runserver 0.0.0.0:80
