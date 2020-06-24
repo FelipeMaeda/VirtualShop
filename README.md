@@ -1,4 +1,4 @@
-# MyMarket
+# MyMarket (Under development)
 
 The MyMarket virtual store is a project created by a group of students from the FAM University Center. The project consists of developing an autonomous system that is easy to maintain, where users can make their purchases online.
 
