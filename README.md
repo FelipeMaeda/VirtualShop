@@ -15,8 +15,8 @@ git clone https://github.com/FelipeMaeda/VirtualShop.git
 cd VirtualShop/mymarket
 pip3 install -r requirements.txt
 python manage.py makemigrations financeiro
-pytho manage.py migrate
-pytho manage.py runserver 0.0.0.0:80
+python manage.py migrate
+python manage.py runserver 0.0.0.0:80
 ```
 
 
